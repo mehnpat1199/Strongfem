@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0"
+    <title> </title>
+
+    <style>
+        body {
+            background-color: #FFB0E0;
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            font-family: Cherry Bomb One;
+            color: #618E65;
+            font-size: 70px;
+        
+        }
+
+        .stem-one{
+            position: absolute; 
+            bottom: -332px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-one 2s linear forwards;
+            animation-delay: 0s;
+
+        }
+
+        @keyframes grow-one{
+            0% { height: 0; }
+            /* 15% { height: 15px; }
+            30% { height: 45px; }
+            45% { height: 90px; }
+            60% { height: 135px; }
+            75% { height: 180px; }
+            90% { height: 225px; } */
+            100% { height: calc(100vh - 55px - 300px); }
+        }
+
+        #tulip-head-one {
+         visibility: hidden;
+        }
+
+        .stem-two{
+            position: absolute; 
+            bottom: -332px; 
+            left: 10%; 
+            transform: translateX(1000%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-two 2s linear forwards;
+            animation-delay: 2s;
+
+        }
+
+        @keyframes grow-two{
+            0% { height: 0; }
+            /* 15% { height: 15px; }
+            30% { height: 45px; }
+            45% { height: 90px; }
+            60% { height: 135px; }
+            75% { height: 180px; }
+            90% { height: 225px; } */
+            100% { height: 270px }
+        }
+
+        #tulip-head-two {
+         visibility: hidden;
+        }
+
+        .stem-three{
+            position: absolute; 
+            bottom: -332px; 
+            left: 90%; 
+            transform: translateX(-1000%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-three 2s linear forwards;
+            animation-delay: 1s;
+
+        }
+
+        @keyframes grow-three{
+            0% { height: 0; }
+            /* 15% { height: 15px; }
+            30% { height: 45px; }
+            45% { height: 90px; }
+            60% { height: 135px; }
+            75% { height: 180px; }
+            90% { height: 225px; } */
+            100% { height: 270px }
+        }
+
+        #tulip-head-three {
+         visibility: hidden;
+        }
+
+        
+        .stem-four{
+            position: absolute; 
+            bottom: -400px; 
+            transform: translateX(-532%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-four 2s linear forwards;
+            animation-delay: 3s;
+
+        }
+
+        @keyframes grow-four{
+            0% { height: 0; }
+            /* 15% { height: 50px; }
+            30% { height: 100px; }
+            45% { height: 140px; }
+            60% { height: 190px; }
+            75% { height: 230px; }
+            80% { height: 290px; }
+            87% {height: 280px;}
+            92% {height: 350px;}
+            95% {height: 480px;}
+            98% { height: 550px } */
+            100% { height: 600px }
+        }
+
+        #tulip-head-four {
+         visibility: hidden;
+        }
+
+        .stem-five{
+            position: absolute; 
+            bottom: -400px; 
+            transform: translateX(400%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-five 2s linear forwards;
+            animation-delay: 2s;
+
+        }
+
+        @keyframes grow-five{
+            0% { height: 0; }
+            /* 15% { height: 50px; }
+            30% { height: 100px; }
+            45% { height: 140px; }
+            60% { height: 190px; }
+            75% { height: 230px; }
+            80% { height: 290px; }
+            87% {height: 280px;}
+            92% {height: 350px;}
+            95% {height: 480px;}
+            98% { height: 550px } */
+            100% { height: 600px }
+        }
+
+        #tulip-head-five {
+         visibility: hidden;
+        }
+
+        .stem-six{
+            position: absolute; 
+            bottom: -400px; 
+            transform: translateX(1500%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-six 2s linear forwards;
+            animation-delay: 4s;
+
+        }
+
+        @keyframes grow-six{
+            0% { height: 0; }
+            /* 15% { height: 50px; }
+            30% { height: 100px; }
+            45% { height: 140px; }
+            60% { height: 190px; }
+            75% { height: 230px; }
+            80% { height: 290px; }
+            87% {height: 280px;}
+            92% {height: 350px;}
+            95% {height: 480px;} */
+            100% { height: 500px }
+        }
+
+        #tulip-head-six {
+         visibility: hidden;
+        }
+
+        .stem-seven{
+            position: absolute; 
+            bottom: -332px; 
+            left: -1300%; 
+            transform: translateX(-1300%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-seven 2s linear forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes grow-seven{
+            0% { height: 0; }
+            /* 15% { height: 15px; }
+            30% { height: 45px; }
+            45% { height: 90px; }
+            60% { height: 135px; }
+            70% { height: 180px; }
+            80% { height: 225px; }
+            87% {height: 280px;}
+            92% {height: 350px;}
+            95% {height: 480px;} */
+            100% { height: 550px }
+        }
+
+        #tulip-head-seven {
+         visibility: hidden;
+        }
+
+        .stem-eight{
+            position: absolute; 
+            bottom: -332px; 
+            left: -1800%; 
+            transform: translateX(-1800%); 
+            background-color: #8DC264; 
+            width: 30px; 
+            height: 0; 
+            z-index: 1;
+            animation: grow-eXight 2s linear forwards;
+            animation-delay: 3s;
+        }
+
+        @keyframes grow-eight{
+            0% { height: 0; }
+            /* 15% { height: 15px; }
+            30% { height: 45px; }
+            45% { height: 90px; }
+            60% { height: 135px; }
+            70% { height: 180px; }
+            80% { height: 225px; }
+            87% {height: 280px;} */
+            100% {height: 350px;}
+
+        }
+
+        #tulip-head-eight {
+         visibility: hidden;
+        }
+
+        .leaf {
+        position: absolute;
+        top: 10px;
+        left: -4%;
+        transform: translateX(-10%);
+    }
+
+    .leaf-two {
+        position: absolute;
+        top: 100px; 
+        left: -20%;
+        transform: translateX(-60%) ;
+    }
+
+    .leaf-three {
+        position: absolute;
+        top: 200px;
+        left: 90%;
+        transform: translateX(-80%)scaleX(-1);
+    }      
+    </style>
+</head>
+
+
+<div style="position: relative;">
+    
+    <svg id= "tulip-head-one" style="position: absolute; top: -250px; left: 50%; transform: translateX(-50%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class="stem-one">
+        <svg class="leaf" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="80" rx="30" ry="15" fill="#8DC264" transform="rotate(-30 50 80)" />
+        </svg>
+    </div>
+   
+    <svg id= "tulip-head-two" style="position: absolute; top: -250px; left: 10%; transform: translateX(44%) translateY(30%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class = "stem-two">
+        <svg class="leaf" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="80" rx="30" ry="15" fill="#8DC264" transform="rotate(-30 50 80)" />
+        </svg>
+    </div>
+    
+    <svg id= "tulip-head-three" style="position: absolute; top: -250px; right: 10%; transform: translateX(-36%) translateY(30%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class = "stem-three">
+        <svg class="leaf" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="80" rx="30" ry="15" fill="#8DC264" transform="rotate(-30 50 80)" />
+        </svg>
+    </div>
+
+    <svg id= "tulip-head-four" style="position: absolute; top: -250px; left: 20%; transform: translateX(-90%) translateY(-50%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class = "stem-four">
+        <svg class="leaf-two" width="50" height="50" viewBox="0 0 112 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="56.1736" cy="55.3739" rx="27.0154" ry="73.0814" transform="rotate(-45.7031 56.1736 55.3739)" fill="#8DC264"/>
+        </svg>
+    </div>
+
+    <svg id= "tulip-head-five" style="position: absolute; top: -250px; left: 20%; transform: translateX(-10%) translateY(-50%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class = "stem-five">
+        <svg class="leaf-three" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="80" rx="30" ry="15" fill="#8DC264" transform="rotate(-30 50 80)" />
+        </svg>
+        <svg class="leaf" style="transform: translateY(20%)" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="80" rx="30" ry="15" fill="#8DC264" transform="rotate(-30 50 80)" />
+        </svg>
+        <svg class="leaf" style="transform: translateY(290px)" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="80" rx="30" ry="15" fill="#8DC264" transform="rotate(-30 50 80)" />
+        </svg>
+
+    </div>
+
+    
+    <svg id= "tulip-head-six" style="position: absolute; top: -250px; left: 20%; transform: translateX(87%) translateY(-30%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class = "stem-six"></div>
+
+    <svg id= "tulip-head-seven" style="position: absolute; top: calc(100vh - 975px); left: calc( 90% - 250px); transform: translateX(-87%) translateY(-30%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class = "stem-seven"></div>
+
+    <svg id= "tulip-head-eight" style="position: absolute; top: calc(100vh - 975px); left: calc( 90% - 395px); transform: translateX(-87%) translateY(27%); z-index: 2;" width="346" height="300" viewBox="0 0 346 369" fill="none" xmlns="http://www.w3.org/2000/svg" transform ="rotate(-76.32deg)">
+        <path d="M238.366 82.2178C247.796 67.5505 267.996 63.8986 279.056 77.3786C291.371 92.3868 300.768 110.212 306.577 129.864C315.627 160.483 315.499 193.965 306.212 225.517C296.926 257.069 278.956 285.074 254.875 305.522C230.795 325.969 201.838 337.812 172.151 339.354C142.464 340.896 113.569 332.059 89.6018 314.107C65.6345 296.155 47.8243 270.009 38.7208 239.412C29.6172 208.815 29.6871 175.336 38.9204 143.767C44.9146 123.273 54.5711 104.266 67.1879 87.8454C78.0542 73.7027 98.8947 76.5107 108.95 91.2413L147.081 147.104C159.191 164.845 185.477 164.483 197.094 146.414L238.366 82.2178Z" fill="white"/>
+        <ellipse cx="174.218" cy="149" rx="44.5" ry="59" fill="white"/>
+    </svg>
+    <div class = "stem-eight">
+    </div>
+
+</div>
+</body>
+</html>
+
+<script>
+document.querySelector('.stem-one').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-one') {
+        document.getElementById('tulip-head-one').style.visibility = 'visible';
+    }
+});
+
+document.querySelector('.stem-two').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-two') {
+        document.getElementById('tulip-head-two').style.visibility = 'visible';
+    }
+});
+
+document.querySelector('.stem-three').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-three') {
+        document.getElementById('tulip-head-three').style.visibility = 'visible';
+    }
+});
+
+document.querySelector('.stem-four').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-four') {
+        document.getElementById('tulip-head-four').style.visibility = 'visible';
+    }
+});
+
+document.querySelector('.stem-five').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-five') {
+        document.getElementById('tulip-head-five').style.visibility = 'visible';
+    }
+});
+
+document.querySelector('.stem-six').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-six') {
+        document.getElementById('tulip-head-six').style.visibility = 'visible';
+    }
+});
+
+document.querySelector('.stem-seven').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-seven') {
+        document.getElementById('tulip-head-seven').style.visibility = 'visible';
+    }
+});
+
+document.querySelector('.stem-eight').addEventListener('animationend', function(event) {
+    if (event.animationName === 'grow-eight') {
+        document.getElementById('tulip-head-eight').style.visibility = 'visible';
+    }
+});
+
+function redirectToNextPage(){
+        window.location.href = 'LastPage.html';
+    }
+
+    document.addEventListener('click', function(){
+        redirectToNextPage();
+    });
+
+</script>
+

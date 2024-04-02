@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0"
+    <title> </title>
+
+    <style>
+        body {
+            background-color: #FFB0E0;
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            font-family: Cherry Bomb One;
+            color: white;
+            text-align: center; 
+        
+        }
+
+        .heart {
+  width: 300px; 
+  height: 300px; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg); 
+  background: #E60037;
+  font-family: Cherry Bomb One;
+  justify-content: center;
+  z-index: 0;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 300px; 
+  height: 300px; 
+  background: #E60037;
+  position: absolute;
+  border-radius: 50%;
+  font-family: Cherry Bomb One;
+}
+
+.heart::before {
+  top: -150px; 
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 150px; 
+}
+
+.text {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: Cherry Bomb One;
+    transform:  rotate(45deg);
+    z-index: 1;
+  }
+
+
+
+</style>
+</head>
+
+<div class="heart">
+    <span class = "text" style = "left: 200px; font-size: 50px; top: 2px;">P.S.</span>
+    <br>
+    <span class = "text" style = "left: -20px; font-size: 29px; top: 70px;">To send some love back, click on the envelope in the corner of each page!</span>
+  </div>
+
+
+
+<script>
+    function redirectToNextPage(){
+        window.location.href = 'Strongfem1.html';
+    }
+
+    document.addEventListener('click', function(){
+        redirectToNextPage();
+    });
+</script>
+
+
+
+</body>
+</html>
